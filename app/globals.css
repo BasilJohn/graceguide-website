@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  /* GraceGuide Color Palette */
+  --color-primary: #4A9DB8;
+  --color-primary-light: #6BB3C8;
+  --color-primary-dark: #3D8BA3;
+  --color-secondary: #FF8A7A;
+  --color-accent: #A89BC9;
+  --color-gold: #E5A890;
+  --color-warmth: #FFB894;
+  --color-calm: #9FD1E0;
+  --color-peace: #B8D9C8;
+  --color-hope: #FFA8B5;
+  
+  /* Background Colors */
+  --color-bg-light: #F8F7F5;
+  --color-bg-dark: #1A2332;
+  --color-element-light: #FFFFFF;
+  --color-element-dark: #1E2835;
+  
+  /* Text Colors */
+  --color-text-light: #1F1F1F;
+  --color-text-dark: #F5F3F0;
+  --color-placeholder-light: rgba(31, 31, 31, 0.5);
+  --color-placeholder-dark: rgba(245, 243, 240, 0.5);
+  
+  /* Border Colors */
+  --color-border-light: #E5E3E0;
+  --color-border-dark: #374151;
+  
+  --background: var(--color-bg-light);
+  --foreground: var(--color-text-light);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-bg-dark);
+    --foreground: var(--color-text-dark);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+.delay-2000 {
+  animation-delay: 2s;
+}

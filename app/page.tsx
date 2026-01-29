@@ -545,7 +545,7 @@ function EnhancedFeatureCard({
   title: string;
   description: string;
   gradient: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
 }) {
   // Determine icon color based on gradient
   const iconColor = gradient.includes('4A9DB8') ? 'text-[#4A9DB8]' : 

@@ -492,6 +492,9 @@ export default function Home() {
               <a href="#features" onClick={(e) => handleLinkClick(e, '#features')} className="hover:text-[#4A9DB8] transition-colors cursor-pointer">Features</a>
               <a href="#explore" onClick={(e) => handleLinkClick(e, '#explore')} className="hover:text-[#4A9DB8] transition-colors cursor-pointer">Explore</a>
               <a href="#waitlist" onClick={(e) => handleLinkClick(e, '#waitlist')} className="hover:text-[#4A9DB8] transition-colors cursor-pointer">Waitlist</a>
+              <a href="/privacy" className="hover:text-[#4A9DB8] transition-colors cursor-pointer">Privacy Policy</a>
+              <a href="/terms" className="hover:text-[#4A9DB8] transition-colors cursor-pointer">Terms & Conditions</a>
+              <a href="/delete-account" className="hover:text-[#4A9DB8] transition-colors cursor-pointer">Delete Account</a>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-[#E5E3E0] dark:border-[#374151] text-center text-xs text-[#6B7280] dark:text-[rgba(245,243,240,0.6)] font-light">

@@ -64,6 +64,6 @@ export const COLORS = {
   danger: "#EF4444",
 } as const;
 
-// API Base URL - same-origin in production (root-relative, so requests go to current host e.g. https://www.mygraceguide.app)
+// API Base URL - production: https://api.mygraceguide.app/
 // Override with NEXT_PUBLIC_API_URL for local development (e.g. http://localhost:4001/)
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "/";
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://api.mygraceguide.app/";

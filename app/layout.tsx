@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "GraceGuide - Your Spiritual Companion",
   description: "Daily scripture, emotional check-ins, AI guidance, and devotionals for your spiritual journey",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

@@ -26,8 +26,11 @@ export default function PrivacyPage() {
           <div className="space-y-10 font-light text-[#1F1F1F] dark:text-[#F5F3F0] leading-relaxed">
           <section>
             <h2 className="text-xl font-semibold mb-4 text-[#1F1F1F] dark:text-[#F5F3F0]">1. Introduction</h2>
-            <p>
+            <p className="mb-4">
               GraceGuide (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services (the &quot;App&quot;).
+            </p>
+            <p className="text-sm text-[#6B7280] dark:text-[rgba(245,243,240,0.6)]">
+              <strong className="text-[#1F1F1F] dark:text-[#F5F3F0]">Note:</strong> GraceGuide is not designed for crises such as abuse, severe mental health conditions, or medical emergencies. It cannot offer medical or clinical advice. In case of emergency, please contact your country-specific crisis or suicide prevention hotline.
             </p>
           </section>
 

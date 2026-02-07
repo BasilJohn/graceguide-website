@@ -497,7 +497,10 @@ export default function Home() {
               <a href="/delete-account" className="hover:text-[#4A9DB8] transition-colors cursor-pointer">Delete Account</a>
             </div>
           </div>
-          <div className="mt-12 pt-8 border-t border-[#E5E3E0] dark:border-[#374151] text-center text-xs text-[#6B7280] dark:text-[rgba(245,243,240,0.6)] font-light">
+          <p className="mt-8 text-xs text-[#6B7280] dark:text-[rgba(245,243,240,0.6)] font-light max-w-2xl mx-auto text-center">
+            GraceGuide is not designed for crises or medical emergencies. For emergencies, please contact your country-specific crisis hotline.
+          </p>
+          <div className="mt-6 pt-8 border-t border-[#E5E3E0] dark:border-[#374151] text-center text-xs text-[#6B7280] dark:text-[rgba(245,243,240,0.6)] font-light">
             © 2025 GraceGuide
           </div>
         </div>
